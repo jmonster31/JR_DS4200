@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Justin Radist's Website</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body style="background-color:rgb(179, 151, 151)">
+    <h1>Justin Radist's Website</h1>
+    <img src="images/DS4200_website_image1.jpeg" alt="Introductory Website Image." width="50%" height="50%">
+
+    <FONT COLOR="GREEN">
+    <p>Content I'd like to eventually add to my website:</p>
+
+    <ul> <!-- changed to list in the tutorial -->
+      <li>Links to several external websites and reference pages</li>
+      <li>Various visualizations, possibly use to create a motif</li>
+      <li>A way to input data and/or a data file and create a visualization of that data</li>
+      <li>A simple game</li>
+    </ul>
+    </FONT>
+
+    <p>Hailing from Brooklyn, NY, I'm a 4th year at Northeastern University majoring in Business with a Finance concentration and minor in 
+        Data Science. I completed my first co-op in Spring 2022 at Bain Capital in their Credit division on the Portfolio Operations team. My
+        second co-op was at Hercules Capital, a small venture debt investment firm, where I was an Investment Analyst. In my free time, I love 
+        to cook, travel, spend time with friends, cycle, run, ski, watch sports, and play board games (Scrabble in particular).
+    </p>
+
+    <img id="cooking-image" src="images/cooking_image.jpeg" alt="Cooking image." width="50%" height="50%">
+    <button onclick="toggle(this);">Hide image</button>
+    
+    <!--
+      <button>Change user</button>
+    -->
+    <script>
+        let toggle = button => {
+          let element = document.getElementById("cooking-image");
+          let hidden = element.getAttribute("hidden");
+          
+          if (hidden) {
+             element.removeAttribute("hidden");
+             img.innerText = "Hide image";
+          } else {
+             element.setAttribute("hidden", "hidden");
+             img.innerText = "Show image";
+          }
+        }
+      </script>
+
+    <br /><br />
+    <!--
+    <form action="/submit" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    -->
+
+
+    <p>See one webpage I use for cooking recipe inspirations here. <a href="https://www.gordonramsay.com/gr/recipes/">Gordon Ramsay's Recipes</a></p>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
